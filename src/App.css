@@ -5,6 +5,11 @@ body {
     background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
 }
 
+.title{
+    font-family: 'Lobster', cursive;
+    letter-spacing: 0.3rem;
+}
+
 .App {
     margin: 2rem auto;
     display: flex;
@@ -42,11 +47,6 @@ body {
 }
 
 .recipes {
-    /* display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
-    gap: 1rem;
-    width: 100%;
-    padding: 1rem; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

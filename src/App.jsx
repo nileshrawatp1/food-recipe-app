@@ -55,8 +55,9 @@ function App() {
 
     return (
         <div className='App'>
+            <h1 className='title'>Welcome to Food Recipe App</h1>
             <form className='search-form' onSubmit={getSearch}>
-                <input type="text" className='search-input' onChange={e => setSearch(e.target.value)} />
+                <input type="text" className='search-input' onChange={e => setSearch(e.target.value)} placeholder='Whats the Craving' />
                 <button type="submit" className='search-btn'>Search</button>
             </form>
             {error && <p className='error-msg'>No Recipe Found</p>}
