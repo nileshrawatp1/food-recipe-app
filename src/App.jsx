@@ -4,9 +4,9 @@ import './App.css'
 import Recipe from './Recipe';
 
 function App() {
-    const [query, setQuery] = useState('Omelette');
+    const [query, setQuery] = useState('Soup');
     const [recipe, setRecipe] = useState([]);
-    const [search, setSearch] = useState('')
+    const [search, setSearch] = useState('Soup')
     const [error, setError] = useState(null)
 
     const getRecipe = async () => {
@@ -49,6 +49,10 @@ function App() {
             ingredients={Object.keys(meal)
                 .filter(key => key.startsWith('strIngredient') && meal[key])
                 .map(key => (meal[key]))
+            }
+            measurements={Object.keys(meal)
+                .filter(key => key.startsWith('strMeasure') && meal[key])
+                .map(key => meal[key])
             }
         />
     ))

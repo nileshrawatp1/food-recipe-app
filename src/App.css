@@ -55,6 +55,17 @@ body {
     padding: 1rem;
 }
 
+.recipe-name {
+    letter-spacing: 0.2rem;
+}
+
+.sub-headings {
+    color: #13547a;
+    letter-spacing: 0.1rem;
+    text-decoration: underline;
+    margin-bottom: 0;
+}
+
 .recipe-card {
     flex: 1 1 calc(40% - 1rem);
     max-width: calc(40% - 1rem);
@@ -86,6 +97,7 @@ body {
 
 a {
     text-decoration: none;
+    color: #150af5;
 }
 
 @media (max-width: 1000px) {
